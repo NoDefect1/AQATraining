@@ -1,4 +1,5 @@
 package org.example;
+
 public class Main {
     public static void main(String[] args) {
         printThreeWords();
@@ -19,50 +20,52 @@ public class Main {
         fullAr();
         multiply6by2();
         fillArrDiag();
-        fillArr(6,8);
+        fillArr(6, 8);
     }
+
     public static void printThreeWords() {
         System.out.println("Orange");
         System.out.println("Banana");
         System.out.println("Apple");
     }
+
     public static void checkSumSign() {
         int a = 14;
         int b = -24;
-        int sum = a+b;
-        if(sum >= 0) {
+        int sum = a + b;
+        if (sum >= 0) {
             System.out.println("Сумма положительная");
-        }
-        else {
+        } else {
             System.out.println("Сумма отрицательная");
         }
     }
+
     public static void prinColor() {
         int value = 101;
-        if (value <=0) {
+        if (value <= 0) {
             System.out.println("Красный");
-        }
-        else if (value <= 100) {
+        } else if (value <= 100) {
             System.out.println("Желтый");
-        }
-        else {
+        } else {
             System.out.println("Зеленый");
         }
     }
+
     public static void compareNumbers() {
         int a = 14;
         int b = 15;
         if (a >= b) {
             System.out.println("a >= b");
-        }
-        else {
+        } else {
             System.out.println("a < b");
         }
     }
+
     public static boolean SumAB(int a, int b) {
         int sum = a + b;
         return sum >= 10 && sum <= 20;
     }
+
     public static void positivOrNegativ(int a) {
         if (a >= 0) {
             System.out.println("Число положительное");
@@ -70,20 +73,23 @@ public class Main {
             System.out.println("Число отрицательное");
         }
     }
+
     public static boolean negTrue(int a) {
         return a < 0;
     }
+
     public static void outputText(String text, int count) {
         for (int i = 0; i < count; i++) {
             System.out.println(text);
         }
     }
+
     public static boolean leapYear(int year) {
-        return(year % 4 == 0 && year % 100 !=0) || (year % 400 ==0);
+        return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
+
     public static void invertArr() {
         int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
-
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (arr[i] == 0) ? 1 : 0;
         }
@@ -92,6 +98,7 @@ public class Main {
         }
         System.out.println();
     }
+
     public static void fullAr() {
         int[] arr = new int[100];
         for (int i = 0; i < arr.length; i++) {
@@ -102,18 +109,18 @@ public class Main {
         }
         System.out.println();
     }
+
     public static void multiply6by2() {
         int[] arr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
-
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (arr[i] < 6) ? arr[i] * 2 : arr[i];
         }
-
         for (int value : arr) {
             System.out.print(value + " ");
         }
         System.out.println();
     }
+
     public static void fillArrDiag() {
         int size = 9;
         int[][] matrix = new int[size][size];
@@ -128,13 +135,12 @@ public class Main {
             System.out.println();
         }
     }
+
     public static int[] fillArr(int len, int initialValue) {
         int[] arr = new int[len];
-
         for (int i = 0; i < arr.length; i++) {
             arr[i] = initialValue;
         }
-
         return arr;
     }
 }
