@@ -19,7 +19,7 @@ public class Main {
         fullAr();
         multiply6by2();
         fillArrDiag();
-        fillArr(6,7);
+        fillArr(6,8);
     }
     public static void printThreeWords() {
         System.out.println("Orange");
