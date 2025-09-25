@@ -17,13 +17,12 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- Принудительно безопасная версия commons-lang3 -->
+            <!-- Зафиксированные безопасные версии -->
             <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>3.13.0</version>
             </dependency>
-            <!-- Принудительно безопасная версия commons-codec -->
             <dependency>
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
@@ -49,11 +48,11 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- JSON-парсинг -->
+        <!-- Jackson вместо уязвимого org.json -->
         <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20230227</version>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.15.2</version>
             <scope>test</scope>
         </dependency>
 
@@ -97,4 +96,3 @@
     </build>
 
 </project>
-
