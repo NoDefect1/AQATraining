@@ -25,7 +25,9 @@ public class TestLink {
             );
             cookieButton.click();
             wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.cookie.show")));
-        } catch (TimeoutException e){};
+        } catch (TimeoutException e){
+            System.out.println();
+        }
     }
 
     @Test
