@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MTS Test Suite">
+    <test name="MTS Tests">
+        <classes>
+            <class name="TestBlock"/>
+            <class name="TestLogos"/>
+            <class name="TestLink"/>
+            <class name="TestForm"/>
+        </classes>
+    </test>
+</suite>
